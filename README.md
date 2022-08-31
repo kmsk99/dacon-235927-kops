@@ -42,6 +42,48 @@
 7. 5 성능 평가를 통해 학습된 기반 모델 및 메타 모델의 성능 평가
 8. 6 테스트 데이터 예측에서 테스트 데이터를 통해 최종 예측하며 submission.csv 파일로 저장
 
+## 6. 성능 평가
+- 예측 성능 (Cross-Validation)
+
+| 모델                               | 스코어      |
+| ---------------------------------- | ----------- |
+| LinearRegression                   | 1.983296472 |
+| Ridge                              | 1.983645821 |
+| Lasso                              | 2.011257877 |
+| ElasticNet                         | 2.011188457 |
+| LassoLars                          | 2.012444171 |
+| OrthogonalMatchingPursuit          | 1.99540754  |
+| BayesianRidge                      | 1.983660117 |
+| ARDRegression                      | 1.986684399 |
+| GradientBoostingRegressor          | 1.961697557 |
+| HistGradientBoostingRegressor      | 1.950305362 |
+| XGBRegressor                       | 1.994067162 |
+| LGBMRegressor                      | 1.948753644 |
+| CatBoostRegressor                  | 1.946809224 |
+| HistGradientBoostingRegressor_tune | 1.945230369 |
+| XGBRegressor_tune                  | 1.9359791   |
+| LGBMRegressor_tune                 | 1.93851026  |
+| CatBoostRegressor_tune             | 1.938609746 |
+| 앙상블 모델                        | 1.932119124 |
+| LB public score                    | 1.932119124 |
+| LB private score                   | 1.949861201 |
+
+- 예측 소요 시간 
+
+|                | CPU times | sys    | total    | Wall time |
+| -------------- | --------- | ------ | -------- | --------- |
+| 1회 시행       | 2min 44s  | 3.66 s | 2min 47s | 2min 31s  |
+| 2회 시행       | 2min 34s  | 2.08 s | 2min 37s | 2min 19s  |
+| 3회 시행       | 2min 38s  | 2.18 s | 2min 40s | 2min 22s  |
+| 4회 시행       | 2min 37s  | 2.13 s | 2min 39s | 2min 22s  |
+| 5회 시행       | 2min 38s  | 2.13 s | 2min 40s | 2min 21s  |
+| 6회 시행       | 2min 39s  | 2.15 s | 2min 41s | 2min 23s  |
+| 7회 시행       | 2min 35s  | 2.14 s | 2min 38s | 2min 19s  |
+| 8회 시행       | 2min 35s  | 2.1 s  | 2min 37s | 2min 18s  |
+| 9회 시행       | 2min 34s  | 2.11 s | 2min 36s | 2min 18s  |
+| 10회 시행      | 2min 32s  | 3.48 s | 2min 35s | 2min 18s  |
+| 평균 소요 시간 | 2min 36s  | 2.42s  | 2min 39s | 2min 21s  |
+
 ## 6. 전체 파일구조
 ```
 ./dacon-235927-kops
