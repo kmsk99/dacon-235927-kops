@@ -65,7 +65,7 @@
 | LGBMRegressor_tune                 | 1.93851026  |
 | CatBoostRegressor_tune             | 1.938609746 |
 | 앙상블 모델                        | 1.932119124 |
-| LB public score                    | 1.932119124 |
+| LB public score                    | 1.934038836 |
 | LB private score                   | 1.949861201 |
 
 - 예측 소요 시간 
