@@ -15,6 +15,104 @@
 ## 5. 스태킹 앙상블 모델
 
 ## 6. 전체 파일구조
+```
+./dacon-235927-kops
+├── 220830_ML_hyperparameter_tuning_with_optuna.ipynb
+├── 220830_PCA_optimize_with_optuna.ipynb
+├── 220830_stacking_ensemble_modeling.ipynb
+├── data
+│   ├── meta
+│   │   ├── x_feature_info.csv
+│   │   ├── y_feature_info.csv
+│   │   └── y_feature_spec_info.csv
+│   ├── ML_model
+│   │   ├── saved_ARDRegression.pkl
+│   │   ├── saved_BayesianRidge.pkl
+│   │   ├── saved_CatBoostRegressor.pkl
+│   │   ├── saved_CatBoostRegressor_tune.pkl
+│   │   ├── saved_ElasticNet.pkl
+│   │   ├── saved_GradientBoostingRegressor.pkl
+│   │   ├── saved_HistGradientBoostingRegressor.pkl
+│   │   ├── saved_HistGradientBoostingRegressor_tune.pkl
+│   │   ├── saved_LassoLars.pkl
+│   │   ├── saved_Lasso.pkl
+│   │   ├── saved_LGBMRegressor.pkl
+│   │   ├── saved_LGBMRegressor_tune.pkl
+│   │   ├── saved_LinearRegression.pkl
+│   │   ├── saved_Meta_LinearRegression.pkl
+│   │   ├── saved_Meta_Ridge.pkl
+│   │   ├── saved_OrthogonalMatchingPursuit.pkl
+│   │   ├── saved_Ridge.pkl
+│   │   ├── saved_XGBRegressor.pkl
+│   │   └── saved_XGBRegressor_tune.pkl
+│   ├── sample_submission.csv
+│   ├── submission.csv
+│   ├── test.csv
+│   ├── train.csv
+│   └── tune_param
+│       ├── CatBoostRegressor_tune
+│       │   ├── tune_0.pkl
+│       │   ├── tune_10.pkl
+│       │   ├── tune_11.pkl
+│       │   ├── tune_12.pkl
+│       │   ├── tune_13.pkl
+│       │   ├── tune_1.pkl
+│       │   ├── tune_2.pkl
+│       │   ├── tune_3.pkl
+│       │   ├── tune_4.pkl
+│       │   ├── tune_5.pkl
+│       │   ├── tune_6.pkl
+│       │   ├── tune_7.pkl
+│       │   ├── tune_8.pkl
+│       │   └── tune_9.pkl
+│       ├── HistGradientBoostingRegressor_tune
+│       │   ├── tune_0.pkl
+│       │   ├── tune_10.pkl
+│       │   ├── tune_11.pkl
+│       │   ├── tune_12.pkl
+│       │   ├── tune_13.pkl
+│       │   ├── tune_1.pkl
+│       │   ├── tune_2.pkl
+│       │   ├── tune_3.pkl
+│       │   ├── tune_4.pkl
+│       │   ├── tune_5.pkl
+│       │   ├── tune_6.pkl
+│       │   ├── tune_7.pkl
+│       │   ├── tune_8.pkl
+│       │   └── tune_9.pkl
+│       ├── LGBMRegressor_tune
+│       │   ├── tune_0.pkl
+│       │   ├── tune_10.pkl
+│       │   ├── tune_11.pkl
+│       │   ├── tune_12.pkl
+│       │   ├── tune_13.pkl
+│       │   ├── tune_1.pkl
+│       │   ├── tune_2.pkl
+│       │   ├── tune_3.pkl
+│       │   ├── tune_4.pkl
+│       │   ├── tune_5.pkl
+│       │   ├── tune_6.pkl
+│       │   ├── tune_7.pkl
+│       │   ├── tune_8.pkl
+│       │   └── tune_9.pkl
+│       └── XGBRegressor_tune
+│           ├── tune_0.pkl
+│           ├── tune_10.pkl
+│           ├── tune_11.pkl
+│           ├── tune_12.pkl
+│           ├── tune_13.pkl
+│           ├── tune_1.pkl
+│           ├── tune_2.pkl
+│           ├── tune_3.pkl
+│           ├── tune_4.pkl
+│           ├── tune_5.pkl
+│           ├── tune_6.pkl
+│           ├── tune_7.pkl
+│           ├── tune_8.pkl
+│           └── tune_9.pkl
+├── LICENSE
+└── README.md
+```
 
 ## 📝 License
 ```
