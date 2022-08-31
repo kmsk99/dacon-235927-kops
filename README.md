@@ -5,8 +5,15 @@
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/jupyter-%23F37626.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 ## 1. 개요
+- 자율주행 센서의 안테나 공정 데이터셋을 하이퍼파라미터 최적화 프레임워크인 Optuna를 활용하여 최적의 성능이 나오는 PCA를 탐색하여 데이터셋 전처리
+- 전처리 된 데이터셋을 학습 데이터셋으로 넣어 Optuna를 활용하여 4개 머신러닝 모델을 하이퍼파라미터 튜닝
+- 하이퍼파라미터 튜닝되지 않은 머신러닝 모델 13개와 하이퍼파라미터 튜닝된 모델 4개를 기반 모델로 하여 1차 예측 수행 후, 기반 모델의 예측 결과를 최종 데이터 세트로 하여 메타 모델로 최종 예측
+- 개발 환경: Google Colab / GPU
 
 ## 2. 자율주행 센서의 안테나 공정 데이터셋
+- DACON의 [자율주행 센서의 안테나 성능 예측 AI 경진대회](https://dacon.io/competitions/official/235927/data)의 정형 데이터셋
+- 데이터 개수: 학습(Train) 데이터셋 (39607개), 테스트(Test) 데이터셋 (39608개)
+- 메타 데이터: 비식별화된 X Feature에 대한 세부 설명 자료, 비식별화된 Y Feature에 대한 세부 설명 자료, 각 샘플의 정상, 불량을 판정할 수 있는 Y Feature 별 스펙 기준 자료
 
 ## 3. PCA 최적화
 
